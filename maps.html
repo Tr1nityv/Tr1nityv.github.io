@@ -1,83 +1,303 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>PV Maps</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2">
+    <title>School Map</title>
+    <style>
+        #map-section {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        #map-section img {
+            width: 100%;
+        }
+        .special-paragraph {
+            background-color: #521c78;
+            padding: 10px;
+            color: white;
+            font-size: 40px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #image-cover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(1, 1, 0, 0.1);
+            pointer-events: none;
+        }
+
+        #map-title {
+            font-size: 60px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 5px 1px 1px #02315E;
+          text-align: center;
+        }
+
+        h3 {
+            font-size: 30px;
+        }
+    </style>
 </head>
 
-<body>
-    <h2>The Map</h2>
+<body bgcolor="#FA8128">
+    <div id="map-section">
+        <img src="header.gif" alt="School Map Header Image">
 
-    <div id="buttons-container">
-        <a href="allmaps.html" class="image-button">
-            <div class="image-button-box">
-                <img src="the.png" alt="The Map">
-                <span>ADMINISTRATION</span>
-            </div>
-        </a>
+        <div id="image-cover"></div>
+    </div>
+    <h1 id="map-title">THE MAP</h1>
 
-        <a href="allmaps.html" class="image-button">
-            <div class="image-button-box">
-                <img src="the.png" alt="The Map">
-                <span>COLLEGE OF AGRICULTURE AND HUMAN SCIENCES</span>
-            </div>
-        </a>
+    <div class="special-paragraph">
+        <p>Welcome to <span style="color: #FA8128;">THE MAP!</span> This map will show you a visual of what the buildings look like and where to find them.</p>
+    </div>
+    <div class="special-paragraph">
+        <p>Scroll down for more information.</p>
+    </div>
+    </div><br><br>
 
-        <a href="allmaps.html" class="image-button">
-            <div class="image-button-box">
-                <img src="the.png" alt="The Map">
-                <span>SCHOOL OF ARCHITECTURE</span>
-            </div>
-        </a>
-      <a href="allmaps.html" class="image-button">
-            <div class="image-button-box">
-                <img src="the.png" alt="The Map">
-                <span>COLLEGE OF ARTS AND SCIENCES, COLLEGE OF BUSINESS</span>
-            </div>
-        </a>
-      <a href="allmaps.html" class="image-button">
-            <div class="image-button-box">
-                <img src="the.png" alt="The Map">
-                <span>COLLEGE OF ARTS AND SCIENCES, COLLEGE OF BUSINESS</span>
-            </div>
-        </a>
-      <a href="allmaps.html" class="image-button">
-            <div class="image-button-box">
-                <img src="the.png" alt="The Map">
-                <span>COLLEGE OF EDUCATION</span>
-            </div>
-        </a>
-      <a href="allmaps.html" class="image-button">
-            <div class="image-button-box">
-                <img src="the.png" alt="The Map">
-                <span>COLLEGE OF ENGINEERING</span>
-            </div>
-        </a>
-      <a href="allmaps.html" class="image-button">
-            <div class="image-button-box">
-                <img src="the.png" alt="The Map">
-                <span>COLLEGE OF JUVENILE JUSTICE AND PSYCHOLOGY</span>
-            </div>
-        </a>
-      <a href="allmaps.html" class="image-button">
-            <div class="image-button-box">
-                <img src="the.png" alt="The Map">
-                <span>COLLEGE OF NURSING</span>
-            </div>
-        </a>
-      <a href="allmaps.html" class="image-button">
-            <div class="image-button-box">
-                <img src="the.png" alt="The Map">
-                <span>UNDERGRADUATE STUDIES</span>
-            </div>
-        </a>
+    <h1 style="text-align: left; color: white; text-shadow: 2px 2px 1px #02315E">Academic Colleges & Schools</h1>
+
+    <div class="building-info" id="map-section">
+        <h3><a href="https://goo.gl/maps/BVstwTGaUga5JCmRA">Nathelyne A. Kennedy Architecture Building</a></h3>
+        <img src="kennedy-building.jpg" alt="Kennedy Architecture Building" target="_blank">
+    </div>
+    <div class="building-info" id="map-section">
+        <h3><a href="https://link-to-your-map-for-Elmer-OBanion-Building">Elmer E. O'Banion Science Building</a></h3>
+        <img src="obanion-building.jpg" alt="Elmer E. O'Banion Science Building">
     </div>
 
-    <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
-</body>
+    <div class="building-info" id="map-section">
+        <h3><a href="https://link-to-your-map-for-Electrical-Engineering-Building">Electrical Engineering Building</a></h3>
+        <img src="electrical-engineering-building.jpg" alt="Electrical Engineering Building">
+    </div>
+    <div class="building-info" id="map-section">
+        <h3><a href="https://link-to-your-map-for-Gilchrist-Engineering-Building">Gilchrist Engineering Building</a></h3>
+        <img src="gilchrist-engineering-building.jpg" alt="Gilchrist Engineering Building">
+    </div>
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-CL-Wilson-Engineering-Building">C. L. Wilson Engineering Building</a></h3>
+    <img src="cl-wilson-engineering-building.webp" alt="C. L. Wilson Engineering Building">
+</div>
 
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-Austin-Greaux-Engineering-Building">Austin Greaux Engineering Building</a></h3>
+    <img src="austin-greaux-engineering-building.jpg" alt="Austin Greaux Engineering Building">
+</div>
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-SR-Collins-Engineering-Technology-Building">S. R. Collins Engineering Technology Building</a></h3>
+    <img src="sr-collins-engineering-technology-building.jpg" alt="S. R. Collins Engineering Technology Building">
+</div>
+
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-Agriculture-Business-Multipurpose-Building">Agriculture and Business Multipurpose Building</a></h3>
+    <img src="agriculture-business-multipurpose-building.jpg" alt="Agriculture and Business Multipurpose Building">
+</div>
+
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-Don-K-Clark-Juvenile-Justice-Psychology-Building">Don K. Clark Juvenile Justice & Psychology Building</a></h3>
+    <img src="don-k-clark-juvenile-justice-psychology-building.jpg" alt="Don K. Clark Juvenile Justice & Psychology Building">
+</div>
+
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-Wilhelmina-F-Delco-Building">Wilhelmina F. Delco Building</a></h3>
+    <img src="wilhelmina-f-delco-building.jpg" alt="Wilhelmina F. Delco Building">
+</div> <br><br>
+  
+  <h1 style="text-align: left; color: white; text-shadow: 2px 2px 1px #02315E">Campus Buildings</h1>
+  <div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-Welcome-Center">Welcome Center</a></h3>
+    <img src="welcome-center.jpg" alt="Welcome Center">
+</div>
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-Transportation-Center">Transportation Center</a></h3>
+    <img src="transportation-center.jpg" alt="Transportation Center">
+</div>
+
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-ENCARB">ENCARB</a></h3>
+    <img src="encarb.jpg" alt="ENCARB">
+</div>
+
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-Student-Park">Student Park</a></h3>
+    <img src="student-park.jpg" alt="Student Park">
+</div>
+
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-Cooperative-Equipment-Barn">Cooperative Equipment Barn</a></h3>
+    <img src="cooperative-equipment-barn.jpg" alt="Cooperative Equipment Barn">
+</div>
+
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-N-Poindexter-Veterinary-Hospital">N. Poindexter Veterinary Hospital</a></h3>
+    <img src="poindexter-veterinary-hospital.jpg" alt="N. Poindexter Veterinary Hospital">
+</div>
+
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-International-Goat-Research-Center">International Goat Research Center (IGRC)</a></h3>
+    <img src="igrc.jpg" alt="International Goat Research Center (IGRC)">
+</div>
+
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-Carden-Waller-Cooperative-Extension-Building">Carden-Waller Cooperative Extension Building</a></h3>
+    <img src="carden-waller-cooperative-extension-building.jpg" alt="Carden-Waller Cooperative Extension Building">
+</div>
+
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-Panther-Plaza">Panther Plaza</a></h3>
+    <img src="panther-plaza.jpg" alt="Panther Plaza">
+</div>
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-John-B-Coleman-Library">John B. Coleman Library</a></h3>
+    <img src="john-b-coleman-library.jpg" alt="John B. Coleman Library">
+</div>
+
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-Johnson-Phillip-All-Faiths-Chapel">Johnson-Phillip All Faiths Chapel</a></h3>
+    <img src="johnson-phillip-all-faiths-chapel.jpg" alt="Johnson-Phillip All Faiths Chapel">
+</div>
+
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-WR-Banks">W. R. Banks</a></h3>
+    <img src="wr-banks.jpg" alt="W. R. Banks">
+</div>
+
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-Fry-Thomas-Power-Plant">Fry-Thomas Power Plant</a></h3>
+    <img src="fry-thomas-power-plant.jpg" alt="Fry-Thomas Power Plant">
+</div>
+
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-GR-Woolfolk-Social-Political-Science-Building">G. R. Woolfolk Social & Political Science Building</a></h3>
+    <img src="gr-woolfolk-building.jpg" alt="G. R. Woolfolk Social & Political Science Building">
+</div>
+
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-Hilliard-Hall-Communication-Building">Hilliard Hall Communication Building</a></h3>
+    <img src="hilliard-hall-communication-building.jpg" alt="Hilliard Hall Communication Building">
+</div>
+
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-AL-Evans-Hall">A. L. Evans Hall</a></h3>
+    <img src="al-evans-hall.jpg" alt="A. L. Evans Hall">
+</div>
+
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-LC-Anderson-Hall">L. C. Anderson Hall</a></h3>
+    <img src="lc-anderson-hall.jpg" alt="L. C. Anderson Hall">
+</div>
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-Owens-Franklin-Health-Clinic">Owens-Franklin Health Clinic</a></h3>
+    <img src="owens-franklin-health-clinic.jpg" alt="Owens-Franklin Health Clinic">
+</div>
+
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-Leroy-G-Moore-Jr-Gym">Leroy G. Moore Jr. Gym</a></h3>
+    <img src="leroy-g-moore-jr-gym.jpg" alt="Leroy G. Moore Jr. Gym">
+</div>
+
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-Student-Recreation-Center">Student Recreation Center</a></h3>
+    <img src="student-recreation-center.jpg" alt="Student Recreation Center">
+</div>
+
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-Willie-A-Tempton-Sr-Memorial-Student-Center">Willie A. Tempton Sr. Memorial Student Center (MSC)</a></h3>
+    <img src="willie-a-tempton-sr-memorial-student-center.jpg" alt="Willie A. Tempton Sr. Memorial Student Center (MSC)">
+</div>
+
+
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-Alvin-I-Thomas-Building">Alvin I. Thomas Building/Administration Building</a></h3>
+    <img src="alvin-i-thomas-building.jpg" alt="Alvin I. Thomas Building/Administration Building">
+</div>
+
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-MT-Harrington-Science-Building">M. T. Harrington Science Building</a></h3>
+    <img src="mt-harrington-science-building.jpg" alt="M. T. Harrington Science Building">
+</div>
+
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-School-of-Architecture-Fabrication-Design-Center">School of Architecture Fabrication Design Center</a></h3>
+    <img src="school-of-architecture-fabrication-design-center.jpg" alt="School of Architecture Fabrication Design Center">
+</div>
+
+
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-Hobart-Thomas-Taylor-Sr-Hall">Hobart Thomas Taylor Sr. Hall</a></h3>
+    <img src="hobart-thomas-taylor-sr-hall.jpg" alt="Hobart Thomas Taylor Sr. Hall">
+</div><br><br>
+
+<h1 style="text-align: left; color: white; text-shadow: 2px 2px 1px #02315E">Housing</h1>
+  <div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-University-Village-Phase-I-II">University Village </a></h3>
+    <img src="university-village.jpg" alt="University Village (Phase I & II)">
+</div>
+
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-University-View-Phase-VII">University View </a></h3>
+    <img src="university-view.jpeg" alt="University View (Phase VII)">
+</div>
+
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-University-College">University College</a></h3>
+    <img src="university-college.jpg" alt="University College">
+</div>
+
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-University-Square-Phase-VIII">University Square</a></h3>
+    <img src="university-square.jpg" alt="University Square (Phase VIII)">
+</div>
+  <h1 style="text-align: left; color: white; text-shadow: 2px 2px 1px #02315E">Sports Facilities</h1>
+
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-William-J-Nicks-Field-House">William J. Nicks Field House (Baby Dome)</a></h3>
+    <img src="nicks-field-house.jpg" alt="William J. Nicks Field House (Baby Dome)">
+</div>
+
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-Athletic-Field-House">Athletic Field House</a></h3>
+    <img src="athletic-field-house.jpg" alt="Athletic Field House">
+</div>
+
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-Panther-Stadium-Blackshear-Football-Field">Panther Stadium (Blackshear Football Field)</a></h3>
+    <img src="panther-stadium.jpg" alt="Panther Stadium (Blackshear Football Field)">
+</div>
+
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-Tennis-Courts">Tennis Courts</a></h3>
+    <img src="tennis-courts.jpg" alt="Tennis Courts">
+</div>
+
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-Soccer-Field">Soccer Field</a></h3>
+    <img src="soccer-field.jpg" alt="Soccer Field">
+</div>
+
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-Lady-Panthers-Softball-Field">Lady Panthers Softball Field</a></h3>
+    <img src="lady-panthers-softball-field.jpg" alt="Lady Panthers Softball Field">
+</div>
+
+<div class="building-info" id="map-section">
+    <h3><a href="https://link-to-your-map-for-John-W-Tankersley-Baseball-Field">John W. Tankersley Baseball Field</a></h3>
+    <img src="john-w-tankersley-baseball-field.webp" alt="John W. Tankersley Baseball Field">
+</div>
+
+</body>
 </html>
+
